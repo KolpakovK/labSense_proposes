@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/local.css">
+    <link rel="stylesheet" href="assets/css/svg-anim.css">
+</head>
+<body>
+    
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- NAV -->
+    
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="row navigation border-bottom">
+            
+            <div class="col hstack gap-3">
+                <!-- logo -->
+                <div class="logo-holder">
+                    <img src="static/Logo.png" alt="Logo" class="logo py-3">
+                    
+                </div>
+                
+                <div class="vr"></div>
+                
+                <!-- right side -->
+                <div class="hstack ms-auto gap-5">
+                    <!-- nav links -->
+                    <div class="tabs gap-2 d-none d-lg-flex ">
+                        
+                        <a href="#" class="tab-item btn">
+                            Home
+                        </a>
+                        
+                        <!-- dropdown -->
+                        <div class="dropdown">
+                            <button class="tab-item btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </button>
+                            <ul class="dropdown-menu animate slideIn">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>                        
+                        </div>
+                        
+                        <a href="#" class="tab-item btn">
+                            Company
+                        </a>
+                        
+                        <a href="#" class="tab-item btn">
+                            FAQs
+                        </a>
+                        
+                    </div>
+                    
+                    <!-- action buttons -->
+                    <div class="hstack gap-2">
+                        <!-- phone -->
+                        <button class="btn btn-outline-primary rounded-pill">
+                            <i class="bi bi-phone"></i>
+                            <span class="d-none d-md-inline">
+                                Button 1
+                            </span>
+                        </button>
+                        
+                        <!-- contact -->
+                        <div class="d-none d-md-flex gap-0">
+                            <button class="btn btn-primary rounded-pill">Button 2</button>
+                            <button class="btn btn-primary rounded-pill">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- hamburger -->
+                        <button class="btn btn-primary rounded-pill d-inline d-lg-none menu-toggle">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- mobile menu -->
+    <div class="container-fluid bg-light p-0 m-0 mobile-menu">
+        
+        <!-- close button -->
+        <button class="btn btn-primary rounded-pill d-inline d-lg-none menu-toggle">
+            <i class="bi bi-x"></i>
+        </button>
+        
+        <div class="row p-0 m-0 h-100 navigation">
+            <!-- docorative image -->
+            <div class="col-md-4 p-0 h-100 d-none d-md-flex">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1486825586573-7131f7991bdd?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Decorative image with laboratory stuff">
+            </div>
+            <!-- menu -->
+            <div class="col d-flex flex-column justify-content-center gap-4 navigation p-4">
+                
+                <div class="tabs d-flex flex-column gap-2">
+                    <a href="#" class="tab-item" style="--i:0">
+                        <em>
+                            Home
+                        </em>
+                    </a>
+                    <div class="tabs-has-child">
+                        <a href="#" class="tab-item" style="--i:1">
+                            <em>
+                                Services
+                            </em>
+                        </a>
+                        <ul class="tabs-childs">
+                            <a href="#" class="tab-item" style="--i:2">
+                                <em>
+                                    Action
+                                </em>
+                            </a>
+                            <a href="#" class="tab-item" style="--i:3">
+                                <em>
+                                    Action 2
+                                </em>
+                            </a>
+                        </ul>                        
+                    </div>
+                    <a href="#" class="tab-item" style="--i:5">
+                        <em>
+                            Company
+                        </em>
+                    </a>
+                </div>
+                
+                <hr>
+                
+                <div class="row contact-panel">
+                    <div class="col-sm-6 contact-item" style="--i:0">
+                        <a href="#" class="btn">Contact data</a>
+                    </div>
+                    <div class="col-sm-6 contact-item" style="--i:1">
+                        <a href="#" class="btn">Contact data</a>
+                    </div>
+                    <div class="col-sm-6 contact-item" style="--i:2">
+                        <a href="#" class="btn">Contact data</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- NAV END -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    
+    
+    <!-- HERO -->
+    <div class="container-fluid hero">
+        <div class="row hero-content">
+            <div class="col-lg-9 col-md-12">
+                <h1 class="display-1 text-primary">Transform Your Lab with Custom-Designed Solutions and Expert Consulting</h1>
+            </div>
+            <div class="col-lg-3 d-block d-lg-flex align-items-end justify-content-end hero-cta">
+                <div class="d-flex gap-0 mt-3">
+                    <button class="btn btn-success rounded-pill text-white">Contact us for a consultation</button>
+                    <button class="btn btn-success rounded-pill text-white">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row image-row pt-5 flex-sm-column flex-md-row">
+            <div class="image-container">
+                <img class="rounded-4" src="https://images.unsplash.com/photo-1614308459036-779d0dfe51ff?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="image-container">
+                <img class="rounded-4" src="https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="image-container">
+                <img class="rounded-4" src="https://images.unsplash.com/photo-1608037222022-62649819f8aa?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class=" container-fluid divider">
+        <div class="ro">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- SECTION 1 -->
+    <div class="container-fluid section1">
+        
+        <img src="static/Illustration.png" class="fixed-illustration d-none d-lg-block" alt="illustration">
+        
+        <div class="row">
+            <div class="col-lg-10 offset-lg-2">
+                <h2 class="display-3 text-primary paragraph-indent">Are you tired of generic lab equipment and solutions that don't quite fit your needs?</h2>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 section1-column">
+                <p class="fs-5 text-body-secondary">
+                    Do you wish you had a partner who could help you transform your lab into a customized, efficient, and cutting-edge facility?
+                </p>
+            </div>
+            <div class="col-lg-4 section1-column">
+                <p class="fs-5 text-body-secondary">
+                    Look no further than our custom-designed solutions and expert consulting services.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- SECTION 2 -->
+    <div class="container-fluid section2">
+        <div class="row">
+            <div class="col bg-primary rounded-4">
+                <div class="d-flex flex-column-reverse flex-lg-row justify-content-between p-3">
+                    <div class="content d-block d-lg-flex flex-column justify-content-between">
+                        <h2 class="display-3 text-white">Our team</h2>
+                        
+                        <div class="content-paragraph mt-5">
+                            <p class="fs-5 text-white">
+                                Our team of experienced professionals can work with you to assess your unique needs, develop a customized plan, and implement solutions tailored specifically to your lab.
+                            </p>
+                            <p class="fs-5 text-white">
+                                Whether you need new equipment, software, or workflow optimization, we have the expertise to help you achieve your goals.
+                            </p>
+                            
+                            <div class="d-flex gap-0 mt-4">
+                                <button class="btn btn-light rounded-pill text-primary">Contact us for a consultation</button>
+                                <button class="btn btn-light rounded-pill text-primary">
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <svg class="illustration" width="448" height="448" viewBox="0 0 448 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="64" cy="64" r="64" fill="#FCFAFA" class="fadeInSvg"></circle>
+                        <path d="M112.461 64C112.461 63.4477 112.013 63 111.461 63C110.908 63 110.461 63.4477 110.461 64H112.461ZM110.461 64C110.461 89.6595 89.6595 110.461 64 110.461V112.461C90.7641 112.461 112.461 90.7641 112.461 64H110.461ZM64 110.461C38.3405 110.461 17.5393 89.6595 17.5393 64H15.5393C15.5393 90.7641 37.2359 112.461 64 112.461V110.461Z" fill="#143651" class="fadeInSvg"></path>
+                        <circle cx="224" cy="64" r="63" stroke="#FCFAFA" stroke-width="2" class="svg-elem-3"></circle>
+                        <path d="M272.461 64C272.461 63.4477 272.013 63 271.461 63C270.908 63 270.461 63.4477 270.461 64H272.461ZM270.461 64C270.461 89.6595 249.66 110.461 224 110.461V112.461C250.764 112.461 272.461 90.7641 272.461 64H270.461ZM224 110.461C198.34 110.461 177.539 89.6595 177.539 64H175.539C175.539 90.7641 197.236 112.461 224 112.461V110.461Z" fill="#FCFAFA" class="fadeInSvg"></path>
+                        <circle cx="384" cy="64" r="64" fill="#FCFAFA" class="fadeInSvg"></circle>
+                        <path d="M432.461 64C432.461 63.4477 432.013 63 431.461 63C430.908 63 430.461 63.4477 430.461 64H432.461ZM430.461 64C430.461 89.6595 409.66 110.461 384 110.461V112.461C410.764 112.461 432.461 90.7641 432.461 64H430.461ZM384 110.461C358.34 110.461 337.539 89.6595 337.539 64H335.539C335.539 90.7641 357.236 112.461 384 112.461V110.461Z" fill="#143651" class="fadeInSvg"></path>
+                        <circle cx="64" cy="224" r="63" stroke="#FCFAFA" stroke-width="2" class="svg-elem-7"></circle>
+                        <path d="M112.461 224C112.461 223.448 112.013 223 111.461 223C110.908 223 110.461 223.448 110.461 224H112.461ZM110.461 224C110.461 249.66 89.6595 270.461 64 270.461V272.461C90.7641 272.461 112.461 250.764 112.461 224H110.461ZM64 270.461C38.3405 270.461 17.5393 249.66 17.5393 224H15.5393C15.5393 250.764 37.2359 272.461 64 272.461V270.461Z" fill="#FCFAFA" class="fadeInSvg"></path>
+                        <circle cx="224" cy="224" r="63" stroke="#FCFAFA" stroke-width="2" class="svg-elem-9"></circle>
+                        <path d="M272.461 224C272.461 223.448 272.013 223 271.461 223C270.908 223 270.461 223.448 270.461 224H272.461ZM270.461 224C270.461 249.66 249.66 270.461 224 270.461V272.461C250.764 272.461 272.461 250.764 272.461 224H270.461ZM224 270.461C198.34 270.461 177.539 249.66 177.539 224H175.539C175.539 250.764 197.236 272.461 224 272.461V270.461Z" fill="#FCFAFA" class="fadeInSvg"></path>
+                        <circle cx="384" cy="224" r="63" stroke="#FCFAFA" stroke-width="2" class="svg-elem-11"></circle>
+                        <path d="M432.461 224C432.461 223.448 432.013 223 431.461 223C430.908 223 430.461 223.448 430.461 224H432.461ZM430.461 224C430.461 249.66 409.66 270.461 384 270.461V272.461C410.764 272.461 432.461 250.764 432.461 224H430.461ZM384 270.461C358.34 270.461 337.539 249.66 337.539 224H335.539C335.539 250.764 357.236 272.461 384 272.461V270.461Z" fill="#FCFAFA" class="fadeInSvg"></path>
+                        <circle cx="64" cy="384" r="63" stroke="#FCFAFA" stroke-width="2" class="svg-elem-13"></circle>
+                        <path d="M112.461 384C112.461 383.448 112.013 383 111.461 383C110.908 383 110.461 383.448 110.461 384H112.461ZM110.461 384C110.461 409.66 89.6595 430.461 64 430.461V432.461C90.7641 432.461 112.461 410.764 112.461 384H110.461ZM64 430.461C38.3405 430.461 17.5393 409.66 17.5393 384H15.5393C15.5393 410.764 37.2359 432.461 64 432.461V430.461Z" fill="#FCFAFA" class="fadeInSvg"></path>
+                        <circle cx="224" cy="384" r="64" fill="#FCFAFA" class="fadeInSvg"></circle>
+                        <path d="M272.461 384C272.461 383.448 272.013 383 271.461 383C270.908 383 270.461 383.448 270.461 384H272.461ZM270.461 384C270.461 409.66 249.66 430.461 224 430.461V432.461C250.764 432.461 272.461 410.764 272.461 384H270.461ZM224 430.461C198.34 430.461 177.539 409.66 177.539 384H175.539C175.539 410.764 197.236 432.461 224 432.461V430.461Z" fill="#143651" class="fadeInSvg"></path>
+                        <circle cx="384" cy="384" r="63" stroke="#FCFAFA" stroke-width="2" class="svg-elem-17"></circle>
+                        <path d="M432.461 384C432.461 383.448 432.013 383 431.461 383C430.908 383 430.461 383.448 430.461 384H432.461ZM430.461 384C430.461 409.66 409.66 430.461 384 430.461V432.461C410.764 432.461 432.461 410.764 432.461 384H430.461ZM384 430.461C358.34 430.461 337.539 409.66 337.539 384H335.539C335.539 410.764 357.236 432.461 384 432.461V430.461Z" fill="#FCFAFA" class="fadeInSvg"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- SECTION 3 -->
+    <div class="container-fluid section3">
+
+        <img src="static/Grid.svg" class="fixed-illustration" alt="" srcset="">
+
+        <div class="row align-items-center">
+            <div class="col-lg-6 image-row">
+                <div class="image-container">
+                    <img class="rounded-4" src="https://images.unsplash.com/photo-1614308459036-779d0dfe51ff?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="image-container">
+                    <img class="rounded-4" src="https://images.unsplash.com/photo-1614308459036-779d0dfe51ff?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+            </div>
+            
+            <div class="col-lg-5 offset-lg-1">
+                <h2 class="display-3 text-primary">Consulting services</h2>
+                
+                <p class="fs-5 text-body-secondary mt-5">
+                    Not only do we provide top-notch solutions, but we also offer expert consulting services to help you navigate the ever-changing landscape of lab technology and regulations. Our team stays up-to-date on the latest advancements and can offer guidance on everything from compliance to best practices.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- SECTION 4 -->
+    <div class="container-fluid section4">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="content">
+                    <h2 class="display-5 text-primary">So why settle for a generic lab when you can have a customized solution designed specifically for you?</h2>
+                    
+                    <p class="fs-5 text-body-secondary mt-5">
+                        Let us help you transform your lab and take your research to the next level.Contact us today to learn more.
+                    </p>
+                </div>
+                
+                <form action="" class="contact-us">
+                    <div class="mb-3">
+                        <input type="text" class="w-100 form-control form-control-lg bg-transparent rounded-0 border-0 border-bottom" name="" placeholder="Full name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="w-100 form-control form-control-lg bg-transparent rounded-0 border-0 border-bottom" name="" placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <input type="phone" id="phone-input" class="w-100 form-control form-control-lg bg-transparent rounded-0 border-0 border-bottom" name="" placeholder="Phone number">
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="" class="w-100 form-control form-control-lg bg-transparent rounded-0 border-0 border-bottom" cols="30" placeholder="Message (optional)" tyle="resize: none;" rows="4"></textarea>
+                    </div>
+
+                    <div class="d-flex gap-0 mt-4">
+                        <button class="btn btn-success rounded-pill text-white">Submit</button>
+                        <button class="btn btn-success rounded-pill text-white">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-4 offset-lg-3 image-container">
+                <div class="panel rounded-4 bg-light-subtle p-3">
+                    <p class="fs-4 text-primary m-0">
+                        <em>Here we can put some quote to describe the company or some testimonial </em>
+                    </p>
+                </div>
+                <img class="rounded-4 img-fluid" src="https://images.unsplash.com/photo-1614308459036-779d0dfe51ff?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer">
+
+        <img src="static/Grid.svg" class="fixed-illustration" alt="" srcset="">
+
+        <div class="row rounded-4 bg-light-subtle">
+            <div class="col-lg-4 d-flex flex-column justify-content-between">
+                <img src="static/Logo.png" alt="Logo" class="logo" width="150px">
+
+                <p class="fs-5 text-body-secondary mt-5">
+                    Copyright © 2023 LabSense.
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="display-5 text-primary">Website map</h3>
+                <div class="row mt-5">
+                    <div class="col-sm-6">
+                        <a href="#" class="btn">Page</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" class="btn">Page</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" class="btn">Page</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="display-5 text-primary">Contact us</h3>
+                <div class="row mt-5">
+                    <div class="col-sm-6">
+                        <a href="#" class="btn">Contact data</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" class="btn">Contact data</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" class="btn">Contact data</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/jquery.inputmask.min.js"></script>
+    
+    <script src="assets/js/anime.min.js"></script>
+    
+    <script src="assets/js/local.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+</html>
