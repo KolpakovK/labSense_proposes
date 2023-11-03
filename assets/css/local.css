@@ -1,95 +1,100 @@
 @media (min-width: 768px) {
+
+    *{
+        cursor: none !important;
+    }
+
     .animate {
         animation-duration: 0.3s;
         -webkit-animation-duration: 0.3s;
         animation-fill-mode: both;
         -webkit-animation-fill-mode: both;
     }
-
+    
     .hero{
         padding-top: 2rem;
     }
-
+    
     .hero .image-row{
         height: 600px;
         display: flex;
-
+        
         gap: 0.5rem;
     }
-
+    
     .hero .image-row .image-container{
         height: 100%;
         flex: 1;
         
     }
-
+    
     .divider{
         padding-top: 5rem;
     }
-
+    
     .section1{
         padding-top: 8rem;
         padding-bottom: 8rem;
         position: relative;
     }
-
+    
     .section1 .fixed-illustration{
         position: absolute;
         bottom: -400px;
         left: -200px;
         z-index: -1;
     }
-
+    
     .section2{
         padding-top: 8rem;
     }
-
+    
     .section2 .content{
         width: 50%;
         height: auto;
     }
-
+    
     .section2 .rounded-4{
         padding: 3rem;
     }
-
+    
     .section3 .image-row{
         height: 600px;
         display: flex;
-
+        
         gap: 0.5rem;
     }
-
+    
     .section3 .image-row .image-container{
         height: 100%;
         flex: 1;
     }
-
+    
     .section3{
         padding-top: 16rem;
         padding-bottom: 8rem;
     }
-
+    
     .section4{
         padding-top: 16rem;
         padding-bottom: 8rem;
     }
-
+    
     .section4 form{
         margin-top: 10rem;
     }
-
+    
     .section4 .image-container{
         position: relative;
     }
-
+    
     .section4 .image-container .panel{
         position: absolute;
         top: 4rem;
         left: -4rem;
         width: 325px;
     }
-
+    
     .footer .rounded-4{
         padding: 3rem;
     }
@@ -97,112 +102,117 @@
     .footer{
         padding-top: 8rem;
     }
-
+    
 }
 @media (max-width: 768px){
+
+    .circle{
+        display: none;
+    }
+
     .hero{
         padding-top: 2rem;
     }
-
+    
     .hero .display-1{
         font-size: 2.25rem;
     }
-
+    
     .hero .image-row{
         padding: 0px 12px;
         height: 450px;
         display: flex;
         flex-direction: column;
-
+        
         gap: 0.5rem;
     }
-
+    
     .hero .image-row .image-container{
         padding: 0 !important;
         height: 100%;
         flex: 1;
         min-height: 10px;
     }
-
+    
     .divider{
         padding-top: 2rem;
     }
-
+    
     .section1{
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
-
+    
     .section1 h2{
         font-size: 2rem;
     }
-
+    
     .section2{
         padding-top: 6rem;
     }
-
+    
     .section2 .rounded-4{
         padding: 1.5rem;
     }
-
+    
     .section2 .content{
         margin-top: 0rem;
     }
-
+    
     .section2 .illustration{
         transform-origin: left top;
         transform: scale(0.6);
     }
-
+    
     .section3{
         padding-top: 8rem;
         padding-bottom: 6rem;
     }
-
+    
     .section3 .image-row{
         padding: 0px 12px;
         height: 450px;
         display: flex;
         flex-direction: column;
-
+        
         gap: 0.5rem;
-
+        
         margin-bottom: 5rem;
     }
-
+    
     .section3 .image-row .image-container{
         padding: 0 !important;
         height: 100%;
         flex: 1;
         min-height: 10px;
     }
-
+    
     .section4{
         padding-top: 8rem;
         padding-bottom: 6rem;
     }
-
+    
     .section4 form{
         margin-top: 6rem;
     }
-
+    
     .section4 .image-container{
         position: relative;
         margin-top: 4rem;
         padding-left: 5rem;
     }
-
+    
     .section4 .image-container .panel{
         position: absolute;
         top: 4rem;
         left: 1rem;
         width: 325px;
     }
-
+    
     .footer .rounded-4{
         padding: 1.5rem;
     }
-
+    
     .footer{
         padding-top: 6rem;
     }
@@ -213,7 +223,7 @@
 }
 
 .footer .fixed-illustration{
-    width: 100wh;
+    width: 100%;
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -225,7 +235,7 @@
 }
 
 .section3 .fixed-illustration{
-    width: 100wh;
+    width: 100%;
     position: absolute;
     transform: scaleY(-1) translateY(100%);
     z-index: -1;
@@ -304,7 +314,7 @@
     height: 0px;
     top: 0;
     left: 0;
-
+    
     z-index: 10;
 }
 
@@ -317,7 +327,7 @@
     font-size: 1.5rem;
     opacity: 0;
     transform: translateX(40px);
-
+    
     transition-duration: 500ms;
     transition-delay: calc(0.3s * var(--i));
     transition-timing-function: ease-in-out;
@@ -331,7 +341,7 @@
 .contact-panel .contact-item{
     opacity: 0;
     transform: translateX(40px);
-
+    
     transition-duration: 500ms;
     transition-delay: calc(1.8s + 0.3s * var(--i));
     transition-timing-function: ease-in-out;
@@ -350,4 +360,24 @@
 
 .paragraph-indent{
     text-indent: 159px;
+}
+
+.circle {
+    position: absolute;
+    mix-blend-mode: multiply;
+    background-color: var(--bs-primary);
+    width: 16px; 
+    height: 16px; 
+    border-radius: 50%;  
+    cursor: none;
+    pointer-events: none;
+
+    transform: translate(-50%,-50%);
+    transition-duration: 700;
+    transform-origin: center center;
+}
+
+.circle.active{
+    width: 32px;
+    height: 32px;
 }

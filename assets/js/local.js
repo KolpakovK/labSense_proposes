@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    
+    
     $('.menu-toggle').click(function () {
         let windowHeight = $(window).height();
         
@@ -11,7 +13,29 @@ $(document).ready(function () {
         });
         if (heightNeeded==0) $(".mobile-menu").toggleClass('active');
     });
-
+    
     $('#phone-input').inputmask('(999) 999-9999');
+    
+    
+    let mouseX = 0, mouseY = 0;
+    let xp = 0, yp = 0;
+    
+    $(document).mousemove(function(e){
+        mouseX = e.pageX;
+        mouseY = e.pageY; 
+    });
+    
+    setInterval(function(){
+        xp += ((mouseX - xp)/6);
+        yp += ((mouseY - yp)/6);
+        $("#circle").css({left: xp +'px', top: yp +'px'});
+    }, 20);
+    
+    
+    $("a,button,input").hover(function(){
+        $("#circle").addClass("active");
+    }, function (){
+        $("#circle").removeClass("active");
+    });
     
 });
